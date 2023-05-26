@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Length Converter</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		p {
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body background="https://i2.pickpik.com/photos/592/737/245/measure-yardstick-tape-ruler-preview.jpg"><center>
+	<br><br><br><br><br><br>
+	<div class="row">
+		<div class="col-xl-2"></div>
+		<div class="col-xl-9" style="padding: 30px; background-color: #FFFFFF;">
+			<center>
+				<h1 style="color: black;">Length Converter</h1><br>
+			</center>
+			<div class="col-md-12"><br>	
+				<h3 style="color: black;">Milimeters to Centimiters</h3><br>		
+				<input type="submit" value="Convert" onclick="myFunction1()">
+				<input type="text" id="id1" placeholder="Enter Milimeters">
+				<center><p id="ans"></p></center>
+			</div>
+			<div class="col-md-12"><br>
+				<h3 style="color: black;">Milimeters to Kilometers</h3><br>
+				<input type="submit" value="Convert" onclick="myFunction2()" >
+				<input type="text" id="id1" placeholder="Enter Milimeters">
+				<center><p id="ans1"></p></center>
+			</div>
+			<div>
+				<h3 style="color: black;">Milimeters to Meters</h3><br>
+				<input type="submit" value="Convert" onclick="myFunction3()">
+				<input type="text" id="id1" placeholder="Enter Milimeter">
+				<center><p id="ans2"></p>
+				
+	<script>
+	function myFunction1() {
+		var centi1 = document.getElementById('id1').value;
+		var centi2 = centi1 / 10;
+		document.getElementById('ans').innerHTML = centi2 + " centimeters";
+	}
+	function myFunction2() {
+		var mili1 = document.getElementById('id1').value;
+		var mili2 = mili1 / 1000;
+		document.getElementById('ans1').innerHTML = mili2 + " meters";
+	}
+	function myFunction3() {
+		var kilom1 = document.getElementById('id1').value;
+		var kilom2 = kilom1 / 1000000;
+		document.getElementById('ans2').innerHTML = kilom2 + " kilometers";
+	}
+</script>
+			
+</body></center>
+</html>
